@@ -59,6 +59,52 @@
 
     <!--Section-->
     <section id="main" style="background-image: url('img8.jpg'); height: 600px;">
+      <div class="row center">
+        <div class="col s3"></div>
+        <div class="col s6">
+            <div class="card white">
+              <div class="card-content"> 
+              
+                <span class="card-title">PAYMENT</span>
+                <form id="details">
+                    <ul class="collapsible expandable">
+                        <li>
+                          <div class="collapsible-header"><i class="material-icons">whatshot</i>First Week</div>
+                          <div class="collapsible-body"><span>
+
+                            <ul class="collection with-header">
+                              <li class="collection-header"><h4>First Week Transactions</h4></li>
+
+                            </ul>
+
+                          </span></div>
+                        </li>
+                        <li>
+                          <div class="collapsible-header"><i class="material-icons">whatshot</i>Second Week</div>
+                          <div class="collapsible-body"><span>
+
+                            <ul class="collection with-header">
+                              <li class="collection-header"><h4>Second Week Transactions</h4></li>
+
+                            </ul>
+                          </span></div>
+                        </li>
+                        <li>
+                          <div class="collapsible-header"><i class="material-icons">whatshot</i>Third Week</div>
+                          <div class="collapsible-body"><span>
+
+                            <ul class="collection with-header">
+                              <li class="collection-header"><h4>Third Week Transactions</h4></li>
+
+                            </ul>
+                          </span></div>
+                        </li>
+                      </ul>
+                </form>
+              </div>
+            </div>
+        </div>
+      </div>
     </section>    
     <!--Footer-->
     <footer id="footer" class="page-footer grey darken-3">
@@ -96,6 +142,9 @@
         
         var elems = document.querySelectorAll('.fixed-action-btn');
         var instances = M.FloatingActionButton.init(elems,{});
+
+        var elem = document.querySelector('.collapsible.expandable');
+        var instance = M.Collapsible.init(elem, {accordion: false});    
 
       });
     </script>

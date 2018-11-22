@@ -44,6 +44,7 @@
       <li><a href="bank.html" class="black-text">Link Bank<i class="material-icons black-text">account_balance</i></a></li>
       <li><a href="pay.html" class="black-text">PAY<i class="material-icons black-text">add_shopping_cart</i></a></li>
     </ul>
+    
 
     <div class="fixed-action-btn">
       <a class="btn-floating btn-large red">
@@ -67,20 +68,7 @@
               
                 <span class="card-title">PAYMENT HISTORY</span>
                 <form id="details">
-                    <ul class="collapsible expandable">
-                        <li>
-                          <div class="collapsible-header"><i class="material-icons">filter_drama</i>First</div>
-                          <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
-                        </li>
-                        <li>
-                          <div class="collapsible-header"><i class="material-icons">place</i>Second</div>
-                          <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
-                        </li>
-                        <li>
-                          <div class="collapsible-header"><i class="material-icons">whatshot</i>Third</div>
-                          <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
-                        </li>
-                      </ul>
+              
                 </form>
               </div>
             </div>
@@ -126,6 +114,9 @@
 
         var elem = document.querySelector('.collapsible.expandable');
         var instance = M.Collapsible.init(elem, {accordion: false});
+
+        var elems = document.querySelectorAll('.tap-target');
+        var instances = M.TapTarget.init(elems,{});
       });
     </script>
     
